@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jepret Lokal - Foto dan Video Produk UMKM</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header id="header-section" data-role="CEO">
+    <div class="header-container">
+      <h1 class="brand">Jepret Lokal</h1>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#hero-section">Beranda</a></li>
+          <li><a href="#catalog-section">Katalog</a></li>
+          <li><a href="#calc-section">Kalkulator</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero-section" data-role="PM">
+    <div class="hero-container">
+      <h2 class="hero-title">Bikin Produk UMKM-mu Tampil Profesional</h2>
+      <p class="hero-subtitle">Jepret Lokal membantu usaha lokal punya foto dan video produk yang menarik, dengan harga ramah kantong dan hasil cepat.</p>
+      <ul class="hero-benefits">
+        <li>Harga terjangkau, mulai Rp15.000 per produk</li>
+        <li>Hasil rapi dan siap unggah ke marketplace dan media sosial</li>
+        <li>Ada promo spesial: kode GRADPROM diskon 15 persen</li>
+      </ul>
+      <a href="#calc-section" class="btn-cta">Hitung Biaya Sekarang</a>
+    </div>
+  </section>
+
+  <section id="catalog-section" data-role="PM">
+    <h2 class="catalog-title">Pilih Paket Jepret Lokal</h2>
+    <div class="promo-banner">Promo Graduation! Mahasiswa dan alumni yang baru merintis usaha, gunakan kode GRADPROM di kalkulator dan dapatkan diskon 15%.</div>
+    <div class="catalog-grid">
+
+      <div class="card">
+        <h3 class="card-title">Paket Foto Polos</h3>
+        <ul class="card-desc">
+          <li>Foto produk dengan latar putih bersih</li>
+          <li>3 sudut foto (depan, samping, detail)</li>
+          <li>Editing dasar: cahaya, warna, dan potong ukuran</li>
+          <li>Hasil siap unggah ke marketplace</li>
+          <li>Cocok untuk: katalog toko online dan marketplace</li>
+        </ul>
+        <p class="card-price">Rp15.000 / produk</p>
+        <p class="card-promo">Pakai kode GRADPROM untuk diskon 15%. Beli minimal 3 produk, otomatis diskon 10%.</p>
+      </div>
+
+      <div class="card">
+        <h3 class="card-title">Paket Foto Tematik Model</h3>
+        <ul class="card-desc">
+          <li>Foto produk dengan properti dan tema sesuai merek</li>
+          <li>Termasuk model untuk produk fashion, kuliner, dan kecantikan</li>
+          <li>5 sudut foto + 1 foto suasana (lifestyle)</li>
+          <li>Retouch lebih halus dan penyesuaian warna merek</li>
+          <li>Cocok untuk: feed Instagram dan promosi premium</li>
+        </ul>
+        <p class="card-price">Rp35.000 / produk</p>
+        <p class="card-promo">Pakai kode GRADPROM untuk diskon 15%. Beli minimal 3 produk, otomatis diskon 10%.</p>
+      </div>
+
+      <div class="card">
+        <h3 class="card-title">Paket Video Pendek Promosi</h3>
+        <ul class="card-desc">
+          <li>Video vertikal 15 sampai 30 detik</li>
+          <li>Siap untuk Reels, TikTok, dan Shorts</li>
+          <li>Termasuk musik latar, teks, dan transisi</li>
+          <li>1 kali revisi gratis</li>
+          <li>Cocok untuk: iklan dan konten promosi</li>
+        </ul>
+        <p class="card-price">Rp150.000 / produk</p>
+        <p class="card-promo">Pakai kode GRADPROM untuk diskon 15%. Beli minimal 3 produk, otomatis diskon 10%.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="calc-section" data-role="SE">
+    <div class="calc-container">
+      <h2>Kalkulator Biaya</h2>
+      <div class="calc-form">
+        <label for="paket">Pilih paket</label>
+        <select id="paket">
+          <option value="15000">Paket Foto Polos - Rp15.000</option>
+          <option value="35000">Paket Foto Tematik Model - Rp35.000</option>
+          <option value="150000">Paket Video Pendek Promosi - Rp150.000</option>
+        </select>
+
+        <label for="jumlah">Jumlah produk</label>
+        <input type="number" id="jumlah" min="1" placeholder="Contoh: 3">
+
+        <label for="kode-promo">Kode promo (opsional)</label>
+        <input type="text" id="kode-promo" placeholder="Contoh: GRADPROM">
+
+        <button id="btn-hitung" class="btn-hitung">Hitung</button>
+      </div>
+      <div id="hasil"></div>
+    </div>
+  </section>
+
+  <footer id="footer-section" data-role="CEO">
+    <p>&copy; 2026 Jepret Lokal. Studio Foto dan Video Katalog Produk UMKM.</p>
+    <p>Kelas WebDev A | Kelompok 5</p>
+    <p>Anggota Tim:</p>
+    <ul class="team-list">
+      <li>Aisyahnalis Aurora Yasminth (CEO)</li>
+      <li>Innesya Ananda Nuurulhuda Azizah (Product Manager)</li>
+      <li>Ni Luh Ayu Mahendri (Product Manager)</li>
+      <li>Arlin Nur Syaftian (UI/UX Designer)</li>
+      <li>Fatin Fahia Rachma (UI/UX Designer)</li>
+      <li>Alyssa Gita Putri (Software Engineer)</li>
+      <li>Marcellino Faris Efendi (Software Engineer)</li>
+    </ul>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
